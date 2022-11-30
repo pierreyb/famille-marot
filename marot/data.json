@@ -1,0 +1,41 @@
+[
+  {
+    "id": "PYB29071979",
+    "data": {
+      "fn": "Pierre-Yves",
+      "ln": "Bernard",
+      "bd": 1979-07-29,
+      "image": "20221022_164953.jpg",
+      "gender": "M"
+    },
+    "rels": {
+      "father": "FB26051946",
+      "spouses": [
+        "0930183100255757"      ],
+      "children": [
+        "AB20082013"
+      ],
+      "mother": "AD18101956"
+    },
+    "main": true
+  },
+  {
+    "id": "AD18101956",
+    "data": {
+      "fn": "Anne",
+      "ln": "Daiwaille",
+      "bd": 1956-10-18,
+      "image": null,
+      "gender": "F"
+    },
+    "rels": {
+      "father": "0888",
+      "spouses": [
+        "FB26051946"
+      ],
+      "children": ["PYB29071979"],
+      "mother": "0.7784747470919489"
+    },
+    "main": false
+  }
+]

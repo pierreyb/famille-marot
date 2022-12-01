@@ -1,6 +1,6 @@
 import f3 from '../src/index.js'
 
-fetch("../data/data.json").then(r => r.json()).then(data => {
+fetch("./data/data.json").then(r => r.json()).then(data => {
   const store = f3.createStore({
       data,
       node_separation: 250,

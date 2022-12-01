@@ -9,12 +9,6 @@
       "gender": "M"
     },
     "rels": {
-      "father": "",
-      "spouses": [
-        ""      ],
-      "children": [
-        ""
-      ],
       "mother": "AD18101956"
     },
     "main": true
@@ -29,12 +23,7 @@
       "gender": "F"
     },
     "rels": {
-      "father": "",
-      "spouses": [
-        ""
-      ],
       "children": ["PYB29071979"],
-      "mother": ""
     },
     "main": false
   }

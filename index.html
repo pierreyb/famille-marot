@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>family-tree</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Famille Marot</title>
+  <link rel="shortcut icon" type="image/svg" href="./examples/logo.svg">
+  <script src="./src/plugins/d3.v6.js"></script>
+  <link rel="stylesheet" href="styles/main.css">
+
 </head>
 <body>
-
-<script>
-  window.location.href = window.location.href + "examples/create-tree"
-</script>
-
+<div id="FamilyChart" style="height: 700px; max-height: calc(100vh - 80px); width: 900px;max-width:100%;margin: auto;position: relative"></div>
+<script src="./src/basic-tree.js" type="module"></script>
 </body>
 </html>

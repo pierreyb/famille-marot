@@ -4,7 +4,7 @@
     "data": {
       "fn": "Pierre-Yves",
       "ln": "Bernard",
-      "bd": 1979-07-29,
+      "bd": "1979-07-29",
       "image": "data/PYB29071979.jpg",
       "gender": "M"
     },
@@ -24,7 +24,7 @@
     "data": {
       "fn": "Anne",
       "ln": "Daiwaille",
-      "bd": 1956-10-18,
+      "bd": "1956-10-18",
       "image": null,
       "gender": "F"
     },

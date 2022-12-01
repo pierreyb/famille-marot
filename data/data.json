@@ -9,11 +9,11 @@
       "gender": "M"
     },
     "rels": {
-      "father": "FB26051946",
+      "father": "",
       "spouses": [
-        "0930183100255757"      ],
+        ""      ],
       "children": [
-        "AB20082013"
+        ""
       ],
       "mother": "AD18101956"
     },
@@ -29,12 +29,12 @@
       "gender": "F"
     },
     "rels": {
-      "father": "0888",
+      "father": "",
       "spouses": [
-        "FB26051946"
+        ""
       ],
       "children": ["PYB29071979"],
-      "mother": "0.7784747470919489"
+      "mother": ""
     },
     "main": false
   }

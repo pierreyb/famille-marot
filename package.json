@@ -1,36 +1,13 @@
 {
-  "name": "family-chart",
-  "version": "0.0.0-beta-1",
-  "description": "family tree creator and viewer",
-  "keywords": [
-    "datafull",
-    "family-chart",
-    "family tree",
-    "d3"
-  ],
-  "homepage": "https://donatso.github.io/family-chart/",
-  "license": "ISC",
-  "author": {
-    "name": "Donat Soric",
-    "url": "https://www.linkedin.com/in/donat-sori%C4%87-342a92161/"
-  },
-  "main": "dist/family-chart.js",
-  "unpkg": "dist/family-chart.min.js",
-  "module": "src/index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/donatso/family-chart.git"
-  },
-  "files": [
-    "dist/**/*.js"
-  ],
+  "name": "family-chart-static",
+  "version": "1.0.0",
+  "description": "family-chart usage for static",
+  "main": "index.html",
   "scripts": {
-    "build": "node build.js"
-  },
-  "sideEffects": false,
-  "dependencies": {
-    "d3": "6"
+    "start": "serve",
+    "build": "echo This is a static template, there is no bundler or bundling involved!"
   },
   "devDependencies": {
+    "serve": "^11.2.0"
   }
 }

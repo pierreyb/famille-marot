@@ -13,7 +13,7 @@
       "children": [
          "JOMXXXX",
          "AM1930",
-         "JMXXXX",
+         "JM27021934",
          "MM1936"
       ]
    }
@@ -32,7 +32,7 @@
       "children": [
          "JOMXXXX",
          "AM1930",
-         "JMXXXX",
+         "JM27021934",
          "MM1936"
       ]
    }
@@ -55,7 +55,7 @@
       "fn": "Andrée",
       "ln": "Marot",
       "bd": "1930",
-      "dd": 2020,
+      "dd": "2020",
       "gender": "F"
    },
    "rels": {
@@ -78,7 +78,7 @@
       "fn": "Martin",
       "ln": "Daiwaille",
       "bd": "1924",
-      "dd": 2001,
+      "dd": "2001",
       "gender": "M"
    },
    "rels": {
@@ -266,7 +266,7 @@
       "father": "CD1954",
       "mother": "IV1965",
       "spouses": [
-         "CD1992"
+         "CL1992"
       ],
       "children": [
          "EDXXXX",
@@ -275,7 +275,7 @@
    }
 },
  {
-   "id": "CD1992",
+   "id": "CL1992",
    "data": {
       "fn": "Camille",
       "ln": "Ledoux",
@@ -301,20 +301,20 @@
    },
    "rels": {
       "father": "MD1992",
-      "mother": "CD1992"
+      "mother": "CL1992"
    }
 },
  {
    "id": "MD31082021",
    "data": {
       "fn": "Marius",
-      "ln": "Dawaille",
+      "ln": "Daiwaille",
       "bd": "31/08/2021",
       "gender": "M"
    },
    "rels": {
       "father": "MD1992",
-      "mother": "CD1992"
+      "mother": "CL1992"
    }
 },
  {
@@ -458,7 +458,7 @@
       "fn": "Xavier",
       "ln": "Bernard",
       "bd": "1984",
-      "dd": 1984,
+      "dd": "1984",
       "gender": "M"
    },
    "rels": {
@@ -543,7 +543,7 @@
       "fn": "Nicole",
       "ln": "Daiwaille",
       "bd": "1959",
-      "dd": 2021,
+      "dd": "2021",
       "gender": "F"
    },
    "rels": {
@@ -619,15 +619,449 @@
    }
 },
  {
-   "id": "JMXXXX",
+   "id": "JM27021934",
    "data": {
       "fn": "Jeanne",
       "ln": "Marot",
+      "bd": "27/02/1934",
+      "dd": "06/10/2018",
       "gender": "F"
    },
    "rels": {
       "father": "IMXXXX",
-      "mother": "ZBXXXX"
+      "mother": "ZBXXXX",
+      "spouses": [
+         "NF26111933"
+      ],
+      "children": [
+         "EF03071959",
+         "AMF11101961",
+         "MF08111963",
+         "CF26031967",
+         "BF30011973"
+      ]
+   }
+},
+ {
+   "id": "NF26111933",
+   "data": {
+      "fn": "Nestor",
+      "ln": "Floymont",
+      "bd": "26/11/1933",
+      "dd": "26/08/2017",
+      "gender": "M"
+   },
+   "rels": {
+      "spouses": [
+         "JM27021934"
+      ],
+      "children": [
+         "EF03071959",
+         "AMF11101961",
+         "MF08111963",
+         "CF26031967",
+         "BF30011973"
+      ]
+   }
+},
+ {
+   "id": "EF03071959",
+   "data": {
+      "fn": "Edmond",
+      "ln": "Floymont",
+      "bd": "03/07/1959",
+      "dd": "28/03/2005",
+      "gender": "M"
+   },
+   "rels": {
+      "father": "NF26111933",
+      "mother": "JM27021934",
+      "spouses": [
+         "SG11021960"
+      ],
+      "children": [
+         "TF13111992",
+         "PF11041994",
+         "MF08091995"
+      ]
+   }
+},
+ {
+   "id": "SG11021960",
+   "data": {
+      "fn": "Sabine",
+      "ln": "Ghyselen",
+      "bd": "11/02/1960",
+      "gender": "F"
+   },
+   "rels": {
+      "spouses": [
+         "EF03071959"
+      ],
+      "children": [
+         "TF13111992",
+         "PF11041994",
+         "MF08091995"
+      ]
+   }
+},
+ {
+   "id": "TF13111992",
+   "data": {
+      "fn": "Thibault",
+      "ln": "Floymont",
+      "bd": "13/11/1992",
+      "gender": "M"
+   },
+   "rels": {
+      "father": "EF03071959",
+      "mother": "SG11021960",
+      "spouses": [
+         "AL19081994"
+      ]
+   }
+},
+ {
+   "id": "AL19081994",
+   "data": {
+      "fn": "Aline",
+      "ln": "Lourtie",
+      "bd": "19/08/1994",
+      "gender": "F"
+   },
+   "rels": {
+      "spouses": [
+         "TF13111992"
+      ]
+   }
+},
+ {
+   "id": "PF11041994",
+   "data": {
+      "fn": "Pauline",
+      "ln": "Floymont",
+      "bd": "11/04/1994",
+      "gender": "F"
+   },
+   "rels": {
+      "father": "EF03071959",
+      "mother": "SG11021960",
+      "spouses": [
+         "GB26071993"
+      ]
+   }
+},
+ {
+   "id": "GB26071993",
+   "data": {
+      "fn": "Grégoire",
+      "ln": "Baert",
+      "bd": "26/07/1993",
+      "gender": "M"
+   },
+   "rels": {
+      "spouses": [
+         "PF11041994"
+      ]
+   }
+},
+ {
+   "id": "MF08091995",
+   "data": {
+      "fn": "Maxime",
+      "ln": "Floymont",
+      "bd": "08/09/1995",
+      "gender": "M"
+   },
+   "rels": {
+      "father": "EF03071959",
+      "mother": "SG11021960"
+   }
+},
+ {
+   "id": "AMF11101961",
+   "data": {
+      "fn": "Anne-Marie",
+      "ln": "Floymont",
+      "bd": "11/10/1961",
+      "gender": "F"
+   },
+   "rels": {
+      "father": "NF26111933",
+      "mother": "JM27021934"
+   }
+},
+ {
+   "id": "MF08111963",
+   "data": {
+      "fn": "Marc",
+      "ln": "Floymont",
+      "bd": "08/11/1963",
+      "gender": "M"
+   },
+   "rels": {
+      "father": "NF26111933",
+      "mother": "JM27021934",
+      "spouses": [
+         "FS23/02/1968"
+      ],
+      "children": [
+         "AF29041990",
+         "MF19051992",
+         "NF26101994"
+      ]
+   }
+},
+ {
+   "id": "FS23/02/1968",
+   "data": {
+      "fn": "Fabienne",
+      "ln": "Sanson",
+      "bd": "23/02/1968",
+      "gender": "F"
+   },
+   "rels": {
+      "spouses": [
+         "MF08111963"
+      ],
+      "children": [
+         "AF29041990",
+         "MF19051992",
+         "NF26101994"
+      ]
+   }
+},
+ {
+   "id": "AF29041990",
+   "data": {
+      "fn": "Angélique",
+      "ln": "Floymont",
+      "bd": "29/04/1990",
+      "gender": "F"
+   },
+   "rels": {
+      "father": "MF08111963",
+      "mother": "FS23/02/1968",
+      "spouses": [
+         "JLXXXX"
+      ]
+   }
+},
+ {
+   "id": "JLXXXX",
+   "data": {
+      "fn": "Julien",
+      "ln": "Legrand",
+      "gender": "M"
+   },
+   "rels": {
+      "spouses": [
+         "AF29041990"
+      ]
+   }
+},
+ {
+   "id": "MF19051992",
+   "data": {
+      "fn": "Martine",
+      "ln": "Floymont",
+      "bd": "19/05/1992",
+      "gender": "F"
+   },
+   "rels": {
+      "father": "MF08111963",
+      "mother": "FS23/02/1968",
+      "spouses": [
+         "YTXXXX"
+      ]
+   }
+},
+ {
+   "id": "YTXXXX",
+   "data": {
+      "fn": "Yolin",
+      "ln": "Targé",
+      "gender": "M"
+   },
+   "rels": {
+      "spouses": [
+         "MF19051992"
+      ]
+   }
+},
+ {
+   "id": "NF26101994",
+   "data": {
+      "fn": "Nathalie",
+      "ln": "Floymont",
+      "bd": "26/10/1994",
+      "gender": "F"
+   },
+   "rels": {
+      "father": "MF08111963",
+      "mother": "FS23/02/1968",
+      "spouses": [
+         "GL25091992"
+      ]
+   }
+},
+ {
+   "id": "GL25091992",
+   "data": {
+      "fn": "Guillaume",
+      "ln": "Lehaire",
+      "bd": "25/09/1992",
+      "gender": "M"
+   },
+   "rels": {
+      "spouses": [
+         "NF26101994"
+      ]
+   }
+},
+ {
+   "id": "CF26031967",
+   "data": {
+      "fn": "Cécile",
+      "ln": "Floymont",
+      "bd": "26/03/1967",
+      "gender": "F"
+   },
+   "rels": {
+      "father": "NF26111933",
+      "mother": "JM27021934",
+      "spouses": [
+         "EP24011964"
+      ],
+      "children": [
+         "MP02051997",
+         "FP21071991",
+         "DP01101993"
+      ]
+   }
+},
+ {
+   "id": "EP24011964",
+   "data": {
+      "fn": "Etienne",
+      "ln": "Pierard",
+      "bd": "24/01/1964",
+      "dd": "08/09/2008",
+      "gender": "M"
+   },
+   "rels": {
+      "spouses": [
+         "CF26031967"
+      ],
+      "children": [
+         "MP02051997",
+         "FP21071991",
+         "DP01101993"
+      ]
+   }
+},
+ {
+   "id": "MP02051997",
+   "data": {
+      "fn": "Maxine",
+      "ln": "Pierard",
+      "bd": "02/05/1997",
+      "gender": "F"
+   },
+   "rels": {
+      "father": "EP24011964",
+      "mother": "CF26031967",
+      "spouses": [
+         "JT03011991"
+      ]
+   }
+},
+ {
+   "id": "JT03011991",
+   "data": {
+      "fn": "Jérôme",
+      "ln": "Theunissen",
+      "bd": "03/01/1991",
+      "gender": "M"
+   },
+   "rels": {
+      "spouses": [
+         "MP02051997"
+      ]
+   }
+},
+ {
+   "id": "FP21071991",
+   "data": {
+      "fn": "Florent",
+      "ln": "Pierard",
+      "bd": "21/07/1991",
+      "gender": "M"
+   },
+   "rels": {
+      "father": "EP24011964",
+      "mother": "CF26031967",
+      "spouses": [
+         "MLN19061993"
+      ]
+   }
+},
+ {
+   "id": "MLN19061993",
+   "data": {
+      "fn": "Marie-Laure",
+      "ln": "Noel",
+      "bd": "19/06/1993",
+      "gender": "F"
+   },
+   "rels": {
+      "spouses": [
+         "FP21071991"
+      ]
+   }
+},
+ {
+   "id": "DP01101993",
+   "data": {
+      "fn": "Delphine",
+      "ln": "Pierard",
+      "bd": "01/10/1993",
+      "gender": "F"
+   },
+   "rels": {
+      "father": "EP24011964",
+      "mother": "CF26031967",
+      "spouses": [
+         "AD03031993"
+      ]
+   }
+},
+ {
+   "id": "AD03031993",
+   "data": {
+      "fn": "Alexandre",
+      "ln": "Demeulemeester",
+      "bd": "03/03/1993",
+      "gender": "M"
+   },
+   "rels": {
+      "spouses": [
+         "DP01101993"
+      ]
+   }
+},
+ {
+   "id": "BF30011973",
+   "data": {
+      "fn": "Bruno",
+      "ln": "Floymont",
+      "bd": "30/01/1973",
+      "dd": "03/08/1998",
+      "gender": "M"
+   },
+   "rels": {
+      "father": "NF26111933",
+      "mother": "JM27021934"
    }
 },
  {
@@ -656,7 +1090,7 @@
       "fn": "Eugène",
       "ln": "Debarsy",
       "bd": "1936",
-      "dd": 2015,
+      "dd": "2015",
       "gender": "M"
    },
    "rels": {

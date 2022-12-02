@@ -1,4 +1,4 @@
-fetch("./data/data.json").then(r => r.json()).then(data => {
+fetch("./data/data_marot.json").then(r => r.json()).then(data => {
     const store = f3.createStore({
             data,
             node_separation: 250,
@@ -14,7 +14,7 @@ fetch("./data/data.json").then(r => r.json()).then(data => {
             card_dim: {w: 220, h: 70, text_x: 75, text_y: 15, img_w: 60, img_h: 60, img_x: 5, img_y: 5},
             card_display: [
                 (d) => `${d.data["fn"] || ""} ${d.data["ln"] || ""}`,
-                (d) => `${d.data["bd"] || ""}`
+                (d) => `${d.data["bd"] || ""} - ${d.data["dd"] || ""}`
                 ],
             mini_tree: true,
             link_break: false

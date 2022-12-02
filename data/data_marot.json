@@ -1,0 +1,1011 @@
+[
+ {
+   "id": "IMXXXX",
+   "data": {
+      "fn": "Isidore",
+      "ln": "Marot",
+      "gender": "M"
+   },
+   "rels": {
+      "spouses": [
+         "ZBXXXX"
+      ],
+      "children": [
+         "JOMXXXX",
+         "AM1930",
+         "JMXXXX",
+         "MM1936"
+      ]
+   }
+},
+ {
+   "id": "ZBXXXX",
+   "data": {
+      "fn": "Zelie",
+      "ln": "Beguin",
+      "gender": "F"
+   },
+   "rels": {
+      "spouses": [
+         "IMXXXX"
+      ],
+      "children": [
+         "JOMXXXX",
+         "AM1930",
+         "JMXXXX",
+         "MM1936"
+      ]
+   }
+},
+ {
+   "id": "JOMXXXX",
+   "data": {
+      "fn": "Joseph",
+      "ln": "Marot",
+      "gender": "M"
+   },
+   "rels": {
+      "father": "IMXXXX",
+      "mother": "ZBXXXX"
+   }
+},
+ {
+   "id": "AM1930",
+   "data": {
+      "fn": "Andrée",
+      "ln": "Marot",
+      "bd": "1930",
+      "dd": 2020,
+      "gender": "F"
+   },
+   "rels": {
+      "father": "IMXXXX",
+      "mother": "ZBXXXX",
+      "spouses": [
+         "MD1924"
+      ],
+      "children": [
+         "CD1954",
+         "AD18101956",
+         "ND1959",
+         "MD1961"
+      ]
+   }
+},
+ {
+   "id": "MD1924",
+   "data": {
+      "fn": "Martin",
+      "ln": "Daiwaille",
+      "bd": "1924",
+      "dd": 2001,
+      "gender": "M"
+   },
+   "rels": {
+      "spouses": [
+         "AM1930"
+      ],
+      "children": [
+         "CD1954",
+         "AD18101956",
+         "ND1959",
+         "MD1961"
+      ]
+   }
+},
+ {
+   "id": "CD1954",
+   "data": {
+      "fn": "Daiwaille ",
+      "ln": "Christian",
+      "bd": "1954",
+      "gender": "M"
+   },
+   "rels": {
+      "father": "MD1924",
+      "mother": "AM1930",
+      "spouses": [
+         "IV1965"
+      ],
+      "children": [
+         "HD1990",
+         "FD1992",
+         "MD1992"
+      ]
+   }
+},
+ {
+   "id": "IV1965",
+   "data": {
+      "fn": "Verbois",
+      "ln": "Isabelle",
+      "bd": "1965",
+      "gender": "F"
+   },
+   "rels": {
+      "children": [
+         "HD1990",
+         "FD1992",
+         "MD1992"
+      ]
+   }
+},
+ {
+   "id": "HD1990",
+   "data": {
+      "fn": "Hélène",
+      "ln": "Daiwaille",
+      "bd": "1990",
+      "gender": "F"
+   },
+   "rels": {
+      "father": "CD1954",
+      "mother": "IV1965",
+      "spouses": [
+         "IM1988"
+      ],
+      "children": [
+         "ADXXXX",
+         "FDXXXX"
+      ]
+   }
+},
+ {
+   "id": "IM1988",
+   "data": {
+      "fn": "Imré",
+      "ln": "Destiné",
+      "bd": "1988",
+      "gender": "M"
+   },
+   "rels": {
+      "spouses": [
+         "HD1990"
+      ],
+      "children": [
+         "ADXXXX",
+         "FDXXXX"
+      ]
+   }
+},
+ {
+   "id": "ADXXXX",
+   "data": {
+      "fn": "Auxence",
+      "ln": "Destiné",
+      "gender": "M"
+   },
+   "rels": {
+      "father": "IM1988",
+      "mother": "HD1990"
+   }
+},
+ {
+   "id": "FDXXXX",
+   "data": {
+      "fn": "Faustine",
+      "ln": "Destiné",
+      "gender": "M"
+   },
+   "rels": {
+      "father": "IM1988",
+      "mother": "HD1990"
+   }
+},
+ {
+   "id": "FD1992",
+   "data": {
+      "fn": "Florine",
+      "ln": "Daiwaille",
+      "bd": "1992",
+      "gender": "F"
+   },
+   "rels": {
+      "father": "CD1954",
+      "mother": "IV1965",
+      "spouses": [
+         "JD1987"
+      ],
+      "children": [
+         "CDXXXX",
+         "GDXXXX"
+      ]
+   }
+},
+ {
+   "id": "JD1987",
+   "data": {
+      "fn": "Julien",
+      "ln": "Demarche",
+      "bd": "1987",
+      "gender": "M"
+   },
+   "rels": {
+      "spouses": [
+         "FD1992"
+      ],
+      "children": [
+         "CDXXXX",
+         "GDXXXX"
+      ]
+   }
+},
+ {
+   "id": "CDXXXX",
+   "data": {
+      "fn": "Céleste",
+      "ln": "Demarche",
+      "gender": "F"
+   },
+   "rels": {
+      "father": "JD1987",
+      "mother": "FD1992"
+   }
+},
+ {
+   "id": "GDXXXX",
+   "data": {
+      "fn": "Gaspard",
+      "ln": "Demarche",
+      "gender": "M"
+   },
+   "rels": {
+      "father": "JD1987",
+      "mother": "FD1992"
+   }
+},
+ {
+   "id": "MD1992",
+   "data": {
+      "fn": "Martin",
+      "ln": "Daiwaille",
+      "bd": "1992",
+      "gender": "M"
+   },
+   "rels": {
+      "father": "CD1954",
+      "mother": "IV1965",
+      "spouses": [
+         "CD1992"
+      ],
+      "children": [
+         "EDXXXX",
+         "MD31082021"
+      ]
+   }
+},
+ {
+   "id": "CD1992",
+   "data": {
+      "fn": "Camille",
+      "ln": "Ledoux",
+      "bd": "1992",
+      "gender": "F"
+   },
+   "rels": {
+      "spouses": [
+         "MD1992"
+      ],
+      "children": [
+         "EDXXXX",
+         "MD31082021"
+      ]
+   }
+},
+ {
+   "id": "EDXXXX",
+   "data": {
+      "fn": "Eliot",
+      "ln": "Daiwaille",
+      "gender": "M"
+   },
+   "rels": {
+      "father": "MD1992",
+      "mother": "CD1992"
+   }
+},
+ {
+   "id": "MD31082021",
+   "data": {
+      "fn": "Marius",
+      "ln": "Dawaille",
+      "bd": "31/08/2021",
+      "gender": "M"
+   },
+   "rels": {
+      "father": "MD1992",
+      "mother": "CD1992"
+   }
+},
+ {
+   "id": "AD18101956",
+   "data": {
+      "fn": "Anne",
+      "ln": "Daiwaille",
+      "bd": "18/10/1956",
+      "gender": "F"
+   },
+   "rels": {
+      "father": "MD1924",
+      "mother": "AM1930",
+      "spouses": [
+         "FB26051946"
+      ],
+      "children": [
+         "PYB29071979",
+         "SB12051981",
+         "XB1984",
+         "MB1986"
+      ]
+   }
+},
+ {
+   "id": "FB26051946",
+   "data": {
+      "fn": "François",
+      "ln": "Bernard",
+      "bd": "26/05/1946",
+      "gender": "M"
+   },
+   "rels": {
+      "spouses": [
+         "AD18101956"
+      ],
+      "children": [
+         "PYB29071979",
+         "SB12051981",
+         "XB1984",
+         "MB1986"
+      ]
+   }
+},
+ {
+   "id": "PYB29071979",
+   "data": {
+      "fn": "Pierre-Yves",
+      "ln": "Bernard",
+      "bd": "29/07/1979",
+      "gender": "M",
+      "avatar": "data/img/PYB29071979.jpg"
+   },
+   "rels": {
+      "father": "FB26051946",
+      "mother": "AD18101956",
+      "children": [
+         "AB20082013"
+      ]
+   }
+},
+ {
+   "id": "AB20082013",
+   "data": {
+      "fn": "Aleksandra",
+      "ln": "Bernard",
+      "bd": "20/08/2013",
+      "gender": "F"
+   },
+   "rels": {
+      "father": "PYB29071979"
+   }
+},
+ {
+   "id": "SB12051981",
+   "data": {
+      "fn": "Sophie",
+      "ln": "Bernard",
+      "bd": "12/05/1981",
+      "gender": "F"
+   },
+   "rels": {
+      "father": "FB26051946",
+      "mother": "AD18101956",
+      "spouses": [
+         "QG1981"
+      ],
+      "children": [
+         "CG2007",
+         "LG2010"
+      ]
+   }
+},
+ {
+   "id": "QG1981",
+   "data": {
+      "fn": "Quentin",
+      "ln": "Gillet",
+      "bd": "1981",
+      "gender": "M"
+   },
+   "rels": {
+      "spouses": [
+         "SB12051981"
+      ],
+      "children": [
+         "CG2007",
+         "LG2010"
+      ]
+   }
+},
+ {
+   "id": "CG2007",
+   "data": {
+      "fn": "Camille",
+      "ln": "Gillet",
+      "bd": "2007",
+      "gender": "F"
+   },
+   "rels": {
+      "father": "QG1981",
+      "mother": "SB12051981"
+   }
+},
+ {
+   "id": "LG2010",
+   "data": {
+      "fn": "Louis",
+      "ln": "Gillet",
+      "bd": "2010",
+      "gender": "M"
+   },
+   "rels": {
+      "father": "QG1981",
+      "mother": "SB12051981"
+   }
+},
+ {
+   "id": "XB1984",
+   "data": {
+      "fn": "Xavier",
+      "ln": "Bernard",
+      "bd": "1984",
+      "dd": 1984,
+      "gender": "M"
+   },
+   "rels": {
+      "father": "FB26051946",
+      "mother": "AD18101956"
+   }
+},
+ {
+   "id": "MB1986",
+   "data": {
+      "fn": "Marie",
+      "ln": "Bernard",
+      "bd": "1986",
+      "gender": "F"
+   },
+   "rels": {
+      "father": "FB26051946",
+      "mother": "AD18101956",
+      "spouses": [
+         "QC1989"
+      ],
+      "children": [
+         "MB2009",
+         "LB2013",
+         "JB2013"
+      ]
+   }
+},
+ {
+   "id": "QC1989",
+   "data": {
+      "fn": "Quentin",
+      "ln": "Cappaert",
+      "bd": "1989",
+      "gender": "M"
+   },
+   "rels": {
+      "spouses": [
+         "MB1986"
+      ]
+   }
+},
+ {
+   "id": "MB2009",
+   "data": {
+      "fn": "Maxime",
+      "ln": "Bougard",
+      "bd": "2009",
+      "gender": "M"
+   },
+   "rels": {
+      "mother": "MB1986"
+   }
+},
+ {
+   "id": "LB2013",
+   "data": {
+      "fn": "Léonore",
+      "ln": "Bougard",
+      "bd": "2013",
+      "gender": "F"
+   },
+   "rels": {
+      "mother": "MB1986"
+   }
+},
+ {
+   "id": "JB2013",
+   "data": {
+      "fn": "Johanne",
+      "ln": "Bougard",
+      "bd": "2015",
+      "gender": "F"
+   },
+   "rels": {
+      "mother": "MB1986"
+   }
+},
+ {
+   "id": "ND1959",
+   "data": {
+      "fn": "Nicole",
+      "ln": "Daiwaille",
+      "bd": "1959",
+      "dd": 2021,
+      "gender": "F"
+   },
+   "rels": {
+      "father": "MD1924",
+      "mother": "AM1930"
+   }
+},
+ {
+   "id": "MD1961",
+   "data": {
+      "fn": "Martine",
+      "ln": "Daiwaille",
+      "bd": "1961",
+      "gender": "F"
+   },
+   "rels": {
+      "father": "MD1924",
+      "mother": "AM1930",
+      "children": [
+         "BC1989",
+         "QC1991",
+         "SC1994",
+         "AC1997"
+      ]
+   }
+},
+ {
+   "id": "BC1989",
+   "data": {
+      "fn": "Bastian",
+      "ln": "Collet",
+      "bd": "1989",
+      "gender": "M"
+   },
+   "rels": {
+      "mother": "MD1961"
+   }
+},
+ {
+   "id": "QC1991",
+   "data": {
+      "fn": "Quentin",
+      "ln": "Collet",
+      "bd": "1991",
+      "gender": "M"
+   },
+   "rels": {
+      "mother": "MD1961"
+   }
+},
+ {
+   "id": "SC1994",
+   "data": {
+      "fn": "Simon",
+      "ln": "Collet",
+      "bd": "1994",
+      "gender": "M"
+   },
+   "rels": {
+      "mother": "MD1961"
+   }
+},
+ {
+   "id": "AC1997",
+   "data": {
+      "fn": "Auriane",
+      "ln": "Collet",
+      "bd": "1997",
+      "gender": "F"
+   },
+   "rels": {
+      "mother": "MD1961"
+   }
+},
+ {
+   "id": "JMXXXX",
+   "data": {
+      "fn": "Jeanne",
+      "ln": "Marot",
+      "gender": "F"
+   },
+   "rels": {
+      "father": "IMXXXX",
+      "mother": "ZBXXXX"
+   }
+},
+ {
+   "id": "MM1936",
+   "data": {
+      "fn": "Madeleine",
+      "ln": "Marot",
+      "bd": "1936",
+      "gender": "F"
+   },
+   "rels": {
+      "father": "IMXXXX",
+      "mother": "ZBXXXX",
+      "spouses": [
+         "EB1936"
+      ],
+      "children": [
+         "MAD1962",
+         "DB1964"
+      ]
+   }
+},
+ {
+   "id": "EB1936",
+   "data": {
+      "fn": "Eugène",
+      "ln": "Debarsy",
+      "bd": "1936",
+      "dd": 2015,
+      "gender": "M"
+   },
+   "rels": {
+      "spouses": [
+         "MM1936"
+      ],
+      "children": [
+         "MAD1962",
+         "DB1964"
+      ]
+   }
+},
+ {
+   "id": "MAD1962",
+   "data": {
+      "fn": "Marie-Anne",
+      "ln": "Debarsy",
+      "bd": "1962",
+      "gender": "F"
+   },
+   "rels": {
+      "father": "EB1936",
+      "mother": "MM1936",
+      "spouses": [
+         "JH1961"
+      ],
+      "children": [
+         "JH1987",
+         "AH1989",
+         "MH1989",
+         "CH1991"
+      ]
+   }
+},
+ {
+   "id": "JH1961",
+   "data": {
+      "fn": "José",
+      "ln": "Hubert",
+      "bd": "1961",
+      "gender": "M"
+   },
+   "rels": {
+      "spouses": [
+         "MAD1962"
+      ],
+      "children": [
+         "JH1987",
+         "AH1989",
+         "MH1989",
+         "CH1991"
+      ]
+   }
+},
+ {
+   "id": "JH1987",
+   "data": {
+      "fn": "Justine",
+      "ln": "Hubert",
+      "bd": "1987",
+      "gender": "F"
+   },
+   "rels": {
+      "father": "JH1961",
+      "mother": "MAD1962",
+      "spouses": [
+         "BH1985"
+      ],
+      "children": [
+         "FH2019",
+         "EH2020"
+      ]
+   }
+},
+ {
+   "id": "BH1985",
+   "data": {
+      "fn": "Benoit",
+      "ln": "Haag",
+      "bd": "1985",
+      "gender": "M"
+   },
+   "rels": {
+      "spouses": [
+         "JH1987"
+      ],
+      "children": [
+         "FH2019",
+         "EH2020"
+      ]
+   }
+},
+ {
+   "id": "FH2019",
+   "data": {
+      "fn": "Felicien",
+      "ln": "Haag",
+      "bd": "2019",
+      "gender": "M"
+   },
+   "rels": {
+      "father": "BH1985",
+      "mother": "JH1987"
+   }
+},
+ {
+   "id": "EH2020",
+   "data": {
+      "fn": "Emile",
+      "ln": "Haag",
+      "bd": "2020",
+      "gender": "M"
+   },
+   "rels": {
+      "father": "BH1985",
+      "mother": "JH1987"
+   }
+},
+ {
+   "id": "AH1989",
+   "data": {
+      "fn": "Antoine",
+      "ln": "Hubert",
+      "bd": "1989",
+      "gender": "M"
+   },
+   "rels": {
+      "father": "JH1961",
+      "mother": "MAD1962",
+      "spouses": [
+         "ZD1989"
+      ],
+      "children": [
+         "AH2019",
+         "VH2020",
+         "CH2022"
+      ]
+   }
+},
+ {
+   "id": "ZD1989",
+   "data": {
+      "fn": "Zélia",
+      "ln": "Baillargea",
+      "bd": "1989",
+      "gender": "F"
+   },
+   "rels": {
+      "spouses": [
+         "AH1989"
+      ],
+      "children": [
+         "AH2019",
+         "VH2020",
+         "CH2022"
+      ]
+   }
+},
+ {
+   "id": "AH2019",
+   "data": {
+      "fn": "Apoline",
+      "ln": "Hubert",
+      "bd": "2019",
+      "gender": "F"
+   },
+   "rels": {
+      "father": "AH1989",
+      "mother": "ZD1989"
+   }
+},
+ {
+   "id": "VH2020",
+   "data": {
+      "fn": "Valier",
+      "ln": "Hubert",
+      "bd": "2020",
+      "gender": "M"
+   },
+   "rels": {
+      "father": "AH1989",
+      "mother": "ZD1989"
+   }
+},
+ {
+   "id": "CH2022",
+   "data": {
+      "fn": "Camille",
+      "ln": "Hubert",
+      "bd": "2022",
+      "gender": "F"
+   },
+   "rels": {
+      "father": "AH1989",
+      "mother": "ZD1989"
+   }
+},
+ {
+   "id": "MH1989",
+   "data": {
+      "fn": "Mathilde",
+      "ln": "Hubert",
+      "bd": "1989",
+      "gender": "F"
+   },
+   "rels": {
+      "father": "JH1961",
+      "mother": "MAD1962"
+   }
+},
+ {
+   "id": "CH1991",
+   "data": {
+      "fn": "Clémence",
+      "ln": "Hubert",
+      "bd": "1991",
+      "gender": "F"
+   },
+   "rels": {
+      "father": "JH1961",
+      "mother": "MAD1962",
+      "spouses": [
+         "JZ1985"
+      ]
+   }
+},
+ {
+   "id": "JZ1985",
+   "data": {
+      "fn": "Jérome",
+      "ln": "Stooz",
+      "bd": "1985",
+      "gender": "M"
+   },
+   "rels": {
+      "spouses": [
+         "CH1991"
+      ]
+   }
+},
+ {
+   "id": "DB1964",
+   "data": {
+      "fn": "Domonique",
+      "ln": "Debarsy",
+      "bd": "1964",
+      "gender": "F"
+   },
+   "rels": {
+      "father": "EB1936",
+      "mother": "MM1936",
+      "spouses": [
+         "CF1955"
+      ],
+      "children": [
+         "AF1991",
+         "MF1993",
+         "GH1996",
+         "LH1997"
+      ]
+   }
+},
+ {
+   "id": "CF1955",
+   "data": {
+      "fn": "Christian",
+      "ln": "Fery",
+      "bd": "1955",
+      "gender": "M"
+   },
+   "rels": {
+      "spouses": [
+         "DB1964"
+      ],
+      "children": [
+         "AF1991",
+         "MF1993",
+         "GH1996",
+         "LH1997"
+      ]
+   }
+},
+ {
+   "id": "AF1991",
+   "data": {
+      "fn": "Aline",
+      "ln": "Fery",
+      "bd": "1991",
+      "gender": "F"
+   },
+   "rels": {
+      "father": "CF1955",
+      "mother": "DB1964",
+      "spouses": [
+         "FH1985"
+      ]
+   }
+},
+ {
+   "id": "FH1985",
+   "data": {
+      "fn": "François",
+      "ln": "Hendricks",
+      "bd": "1985",
+      "gender": "M"
+   },
+   "rels": {
+      "spouses": [
+         "AF1991"
+      ]
+   }
+},
+ {
+   "id": "MF1993",
+   "data": {
+      "fn": "Maxime",
+      "ln": "Fery",
+      "bd": "1983",
+      "gender": "M"
+   },
+   "rels": {
+      "father": "CF1955",
+      "mother": "DB1964"
+   }
+},
+ {
+   "id": "GH1996",
+   "data": {
+      "fn": "Guillaume",
+      "ln": "Fery",
+      "bd": "1996",
+      "gender": "M"
+   },
+   "rels": {
+      "father": "CF1955",
+      "mother": "DB1964"
+   }
+},
+ {
+   "id": "LH1997",
+   "data": {
+      "fn": "Louise",
+      "ln": "Fery",
+      "bd": "1997",
+      "gender": "F"
+   },
+   "rels": {
+      "father": "CF1955",
+      "mother": "DB1964"
+   }
+ }
+]

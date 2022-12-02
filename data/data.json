@@ -1,30 +1,30 @@
 [
-  {
-    "id": "PYB29071979",
-    "data": {
-      "fn": "Pierre-Yves",
-      "ln": "Bernard",
-      "bd": "1979-07-29",
-      "avatar": "data/img/PYB29071979.jpg",
-      "gender": "M"
+    {
+        "id": "PYB29071979",
+        "data": {
+            "fn": "Pierre-Yves",
+            "ln": "Bernard",
+            "bd": "29/07/1979",
+            "avatar": "data/img/PYB29071979.jpg",
+            "gender": "M"
+        },
+        "rels": {
+            "mother": "AD18101956"
+        }
     },
-    "rels": {
-      "mother": "AD18101956"
-    },
-    "main": true
-  },
-  {
-    "id": "AD18101956",
-    "data": {
-      "fn": "Anne",
-      "ln": "Daiwaille",
-      "bd": "1956-10-18",
-      "image": null,
-      "gender": "F"
-    },
-    "rels": {
-      "children": ["PYB29071979"]
-    },
-    "main": false
-  }
+    {
+        "id": "AD18101956",
+        "data": {
+            "fn": "Anne",
+            "ln": "Daiwaille",
+            "bd": "18/10/1956",
+            "avatar": null,
+            "gender": "F"
+        },
+        "rels": {
+            "children": [
+                "PYB29071979"
+            ]
+        }
+    }
 ]

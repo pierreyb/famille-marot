@@ -1,28 +1,28 @@
 [
- {
-   "id": "IMXXXX",
-   "data": {
-      "fn": "Isidore",
-      "ln": "Marot",
-      "gender": "M"
-   },
-     "rels": {
-         "spouses": [
-             "ZBXXXX"
-         ],
-         "children": [
-             "JOMXXXX",
-             "LMXXXX",
-             "AM1930",
-             "AMXXXX",
-             "PMXXXX",
-             "JM27021934",
-             "MM1936",
-             "JMXXXX",
-             "TMXXXX"
-         ]
-     }
- },
+    {
+        "id": "IMXXXX",
+        "data": {
+            "fn": "Isidore",
+            "ln": "Marot",
+            "gender": "M"
+        },
+        "rels": {
+            "spouses": [
+                "ZBXXXX"
+            ],
+            "children": [
+                "JOMXXXX",
+                "LMXXXX",
+                "AM1930",
+                "AMXXXX",
+                "PMXXXX",
+                "JM27021934",
+                "MM1936",
+                "JMXXXX",
+                "TMXXXX"
+            ]
+        }
+    },
     {
         "id": "ZBXXXX",
         "data": {
@@ -2336,9 +2336,13 @@
         "id": "MMXXXX",
         "data": {
             "fn": "Maëlig",
-            "ln": "Marot"
+            "ln": "Marot",
+            "gender": "M"
         },
-        "rels": {}
+        "rels": {
+            "father": "EMXXXX",
+            "mother": "VMXXXX"
+        }
     },
     {
         "id": "TMXXXX",
@@ -2387,7 +2391,10 @@
             "ln": "Tagnon",
             "gender": "M"
         },
-        "rels": {}
+        "rels": {
+            "father": "ITXXXX",
+            "mother": "TMXXXX"
+        }
     },
     {
         "id": "CLTXXXXX",
@@ -2397,6 +2404,8 @@
             "gender": "F"
         },
         "rels": {
+            "father": "ITXXXX",
+            "mother": "TMXXXX",
             "children": [
                 "FXXXXX",
                 "MXXXXX"
@@ -2430,7 +2439,10 @@
             "ln": "Tagnon",
             "gender": "M"
         },
-        "rels": {}
+        "rels": {
+            "father": "ITXXXX",
+            "mother": "TMXXXX"
+        }
     },
     {
         "id": "BTXXXX",
@@ -2439,6 +2451,9 @@
             "ln": "Tagnon",
             "gender": "F"
         },
-        "rels": {}
+        "rels": {
+            "father": "ITXXXX",
+            "mother": "TMXXXX"
+        }
     }
 ]

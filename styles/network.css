@@ -1,11 +1,19 @@
-svg.main_svg {
+html {
+  font-family: sans-serif;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+#FamilyChart {
   width: 100%;
   height: 100%;
   background-color: rgb(59, 85, 96);
   color: rgb(59, 85, 96);
 }
 
-svg.main_svg text {
+div.FamilyChart text {
   fill: currentColor;
 }
 
@@ -21,21 +29,9 @@ rect.card-male, .card-male .card-body-rect, .card-male .text-overflow-mask {
   fill: lightgray;
 }
 
-.card_add .card-body-rect {
-  fill: rgb(59, 85, 96);
-  stroke-width: 4px;
-  stroke: #fff;
-  cursor: pointer;
-}
-
-g.card_add text {
-  fill: #fff;
-}
-
 .card-main {
   stroke: #000;
 }
-
 
 /* card_family_tree element */
 .card_family_tree rect {
@@ -45,27 +41,6 @@ g.card_add text {
   transform: scale(1.1);
 }
 
-/* card_family_tree element */
-.card_add_relative {
-  cursor: pointer;
-  color: #fff;
-  transition: .3s;
-}
-.card_add_relative circle {
-  fill: rgba(0,0,0,0);
-}
-.card_add_relative:hover {
-  color: black;
-}
-
-/* pencil_icon element */
-.card_edit.pencil_icon {
-  color: #fff;
-  transition: .3s;
-}
-.card_edit.pencil_icon:hover {
-  color: black;
-}
 
 /* link element */
 .card_break_link, .link_upper, .link_lower, .link_particles {

@@ -1,41 +1,25 @@
-async function fetchFamillyData() {
-    let data_url = './data/data_marot.json';
-    try {
-        let res = await fetch(data_url);
-        return await res.json();
-    } catch (error) {
-        console.log(error);
-    }
-}
-
-function listFamilly(item) {
-    function createFamillyLink(source, target, type) {
-        for (let i=0;i < target.length;i++) {
-            famillyLink.push(new Object({source: source, target: target[i], type: type}));
-        }
-    }
-
-    // For each rels type we create a link of this type
-    for (const [key, value] of Object.entries(item.rels)) {
-        let target = value;
-        if (typeof value === 'string') {
-            target = [value];
-        }
-        createFamillyLink(item.id,target,key) ;
-    }
-}
+import * as fetchData from './data/fetch-data.js';
+import * as familyNetwork from './data/family-network.js';
 
 // read the json with failly date
-let famillyData = await fetchFamillyData();
+let data_url = './data/data_marot.json';
+let familyData = await fetchData.fetchfamilyData(data_url);
 
-// Build the familly link based on the relation
-let famillyLink = [];
-famillyData.forEach(listFamilly) ;
+// Put parents together
+familyData.forEach(familyNetwork.setParents) ;
+
+// Add a level for each member
+familyData.forEach(familyNetwork.setFamilyLevel) ;
+const maxFamilyLevel = Math.max.apply(null,familyData.map(x => x.familyLevel));
+console.log(maxFamilyLevel);
+
+// Build the family link based on the relation
+let familyLink = fetchData.createFamilyLinks(familyData);
 
 
 // Drawing part
-let nodes = famillyData ;
-let links = famillyLink ;
+let nodes = familyData ;
+let links = familyLink ;
 
 const nodeFill = "currentColor"; // node stroke fill (if not using a group color encoding)
 const nodeStroke = "#fff"; // node stroke color
@@ -55,8 +39,11 @@ let height = div.offsetHeight ;
 
 const simulation = d3.forceSimulation()
 .nodes(nodes)
-//.force("link", d3.forceLink(links).id(function(d) { return d.id; }))
 .force("center", d3.forceCenter(width / 2, height / 2))
+.force("y",d3.forceY().y(function(d) {
+    return (d.familyLevel * height)/(maxFamilyLevel + 1) ;
+}))
+//.force("link", d3.forceLink(links).id(function(d) { return d.id; }))
 .on("tick", tick);
 
 const svg = d3.create("svg")

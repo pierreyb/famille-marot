@@ -1,14 +1,19 @@
-export function Card() {
+export function Card(d) {
 
-    return function ({d}) {
-        const el = document.createElementNS("http://www.w3.org/2000/svg", 'g'),
-        gender_class = d.data.data.gender === 'M' ? 'card-male' : d.data.data.gender === 'F' ? 'card-female' : 'card-genderless'
+    console.log(this);
+    const card_width = 180 ;
+    const card_heigt = 115 ;
+    const gender_class = d.data.gender === 'M' ? 'card-male' : d.data.gender === 'F' ? 'card-female' : 'card-genderless';
 
-        el.innerHTML = (`
-        <g class="card ${gender_class}" data-id="${d.data.id}" data-cy="card">
-        </g>
-        `)
+    d3.select(this)
+    .attr("id",d.id)
+    .attr("class","card " + gender_class)
+    .append("rect")
+    .attr("width", card_width)
+    .attr("height", card_heigt)
+    .attr("rx", "4")
+    .attr("ry","4")
+    .attr("class","card-outline card-main-outline")
+    ;
 
-        return el
-    }
 }

@@ -1,5 +1,6 @@
 import * as fetchData from './data/fetch-data.js';
 import * as familyNetwork from './data/family-network.js';
+import * as card from './view/cards.js';
 
 // read the json with failly date
 let data_url = './data/data_marot.json';
@@ -11,7 +12,7 @@ familyData.forEach(familyNetwork.setParents) ;
 // Add a level for each member
 familyData.forEach(familyNetwork.setFamilyLevel) ;
 const maxFamilyLevel = Math.max.apply(null,familyData.map(x => x.familyLevel));
-console.log(maxFamilyLevel);
+
 
 // Build the family link based on the relation
 let familyLink = fetchData.createFamilyLinks(familyData);
@@ -46,10 +47,10 @@ const simulation = d3.forceSimulation()
 //.force("link", d3.forceLink(links).id(function(d) { return d.id; }))
 .on("tick", tick);
 
-const svg = d3.create("svg")
+// Set the size of the svg to the size of the container div
+const svg = d3.select('#FamilyChart').selectChild()
 .attr("width", width)
-.attr("height", height)
-.attr("style", "max-width: 100%; height: auto; height: intrinsic;");
+.attr("height", height);
 
 const link = svg.append("g")
 .attr("stroke", typeof linkStroke !== "function" ? linkStroke : null)
@@ -60,15 +61,19 @@ const link = svg.append("g")
 .data(links)
 .join("line");
 
-const node = svg.append("g")
-.attr("fill", nodeFill)
-.attr("stroke", nodeStroke)
-.attr("stroke-opacity", nodeStrokeOpacity)
-.attr("stroke-width", nodeStrokeWidth)
-.selectAll("circle")
+
+// Set the parameter of the node
+const familyCard = d3.selectAll(".familyCard");
+familyCard.remove();
+
+//const node = svg.selectAll("g")
+const node = svg
+.selectAll("g")
 .data(nodes)
-.join("circle")
-.attr("r", nodeRadius) ;
+.enter()
+.append("g")
+.each(card.Card) ;
+
 
 
 function tick() {
@@ -77,9 +82,9 @@ function tick() {
     .attr("y1", d => d.source.y)
     .attr("x2", d => d.target.x)
     .attr("y2", d => d.target.y);
+
+    const translate = function(d) { return "translate(" + d.x + "," + d.y + ")"};
     node
-    .attr("cx", d => d.x)
-    .attr("cy", d => d.y);
+    .attr("transform", translate);
 }
 
-d3.select('#FamilyChart').append(() => svg.node());

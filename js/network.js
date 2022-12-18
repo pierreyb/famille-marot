@@ -31,18 +31,20 @@ let div = document.querySelector('#FamilyChart');
 let width = div.offsetWidth ;
 let height = div.offsetHeight ;
 
+let scaleWidth = width ;
+let scaleHeight = height ;
+let minNodeWidth = 0 ;
+let minNodeHeight = 0 ;
 
 
 const simulation = d3.forceSimulation()
 .nodes(nodes)
 .force('collide', d3.forceCollide().radius(100))
-// Get the node in the center of the graph
-.force("center", d3.forceCenter(width / 2, height / 2))
 // Set the spouses together
 .force("link", d3.forceLink(links.filter(el => el.type === "spouses")).id(function(d) { return d.id; }))
 // Move the node based on the familyLevel
 .force("y",d3.forceY().y(function(d) {
-    return (d.familyLevel * height)/(maxFamilyLevel + 1) ;
+    return (d.familyLevel * scaleHeight)/(maxFamilyLevel + 1) ;
 }))
 .on("tick", tick);
 
@@ -76,9 +78,10 @@ const node = gview.selectAll(".familyCard")
 ;
 
 // zoom implementation
-svg.call(d3.zoom()
+let zoom = d3.zoom()
 .scaleExtent([.05, 1])  // This control how much you can unzoom (x0.5) and zoom (x20)
-.on("zoom", zoomed));
+.on("zoom", zoomed);
+svg.call(zoom);
 
 function zoomed({transform}) {
     gview
@@ -86,6 +89,18 @@ function zoomed({transform}) {
 }
 
 function tick() {
+
+    // automatically unzoom to fit the screen
+    minNodeWidth = Math.min(...nodes.map(e => e.x));
+    minNodeHeight = Math.min(...nodes.map(e => e.y)) ;
+    scaleWidth = Math.max(...nodes.map(e => e.x)) - minNodeWidth;
+    scaleHeight = Math.max(...nodes.map(e => e.y)) - minNodeHeight;
+    let scaleZoom = Math.min(1, width/scaleWidth, height/scaleHeight) ;
+    let tx = Math.abs(Math.min(0,minNodeWidth)) * scaleZoom ;
+    let ty = Math.abs(Math.min(0,minNodeHeight)) * scaleZoom;
+    console.log(tx + "/" + ty );
+    svg.call(zoom.transform,d3.zoomIdentity.translate(tx,ty).scale(scaleZoom));
+
     link
     .attr("x1", d => d.source.x)
     .attr("y1", d => d.source.y)

@@ -22,11 +22,6 @@ let familyLink = fetchData.createFamilyLinks(familyData);
 let nodes = familyData ;
 let links = familyLink ;
 
-const nodeFill = "currentColor"; // node stroke fill (if not using a group color encoding)
-const nodeStroke = "#fff"; // node stroke color
-const nodeStrokeWidth = 1.5; // node stroke width, in pixels
-const nodeStrokeOpacity = 1; // node stroke opacity
-const nodeRadius = 5; // node radius, in pixels
 const linkStroke = "#999"; // link stroke color
 const linkStrokeOpacity = 0.6; // link stroke opacity
 const linkStrokeWidth = 1.5; // given d in links, returns a stroke width in pixels
@@ -40,11 +35,15 @@ let height = div.offsetHeight ;
 
 const simulation = d3.forceSimulation()
 .nodes(nodes)
+.force('collide', d3.forceCollide().radius(100))
+// Get the node in the center of the graph
 .force("center", d3.forceCenter(width / 2, height / 2))
+// Set the spouses together
+.force("link", d3.forceLink(links.filter(el => el.type === "spouses")).id(function(d) { return d.id; }))
+// Move the node based on the familyLevel
 .force("y",d3.forceY().y(function(d) {
     return (d.familyLevel * height)/(maxFamilyLevel + 1) ;
 }))
-//.force("link", d3.forceLink(links).id(function(d) { return d.id; }))
 .on("tick", tick);
 
 // Set the size of the svg to the size of the container div
@@ -52,7 +51,10 @@ const svg = d3.select('#FamilyChart').selectChild()
 .attr("width", width)
 .attr("height", height);
 
-const link = svg.append("g")
+// Select the default g view use for zoom purpuse
+const gview = d3.select(".familyView") ;
+
+const link = gview.append("g")
 .attr("stroke", typeof linkStroke !== "function" ? linkStroke : null)
 .attr("stroke-opacity", linkStrokeOpacity)
 .attr("stroke-width", typeof linkStrokeWidth !== "function" ? linkStrokeWidth : null)
@@ -62,19 +64,26 @@ const link = svg.append("g")
 .join("line");
 
 
-// Set the parameter of the node
-const familyCard = d3.selectAll(".familyCard");
+// Retrieve the default familyCard definition
+const familyCard = d3.select(".familyCard");
 familyCard.remove();
 
-//const node = svg.selectAll("g")
-const node = svg
-.selectAll("g")
+const node = gview.selectAll(".familyCard")
 .data(nodes)
 .enter()
-.append("g")
-.each(card.Card) ;
+.append(() => familyCard.clone(true).node())
+.each(card.Card)
+;
 
+// zoom implementation
+svg.call(d3.zoom()
+.scaleExtent([.05, 1])  // This control how much you can unzoom (x0.5) and zoom (x20)
+.on("zoom", zoomed));
 
+function zoomed({transform}) {
+    gview
+    .attr("transform", transform);
+}
 
 function tick() {
     link
@@ -85,6 +94,6 @@ function tick() {
 
     const translate = function(d) { return "translate(" + d.x + "," + d.y + ")"};
     node
-    .attr("transform", translate);
+    .attr("transform", translate) ;
 }
 

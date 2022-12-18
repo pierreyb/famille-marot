@@ -9,13 +9,20 @@
 
 </head>
 <body>
-<div id="FamilyChart" style="height: 98vh;width: 98vw;margin: auto;position: relative">
-<svg width="300" height="300" style="max-width: 100%;">
-<g class="familyCard">
-<rect width="180" height="115" rx="4" ry="4" class="card-outline card-main-outline"></rect></g>
-
-</svg>
+<div id="FamilyChart" style="height: 98vh; width: 98vw;margin: auto;position: relative">
+    <svg width="300" height="300" style="max-width: 100%;">
+        <g class="familyView">
+            <g class="familyCard">
+                <g transform="translate(-90,-58)">
+                    <rect width="180" height="115" rx="4" ry="4" class="card-outline card-main-outline"></rect>
+                    <text class="familyCardName" dx=10 dy=75></text>
+                    <text class="familyCardBirth" dx=10 dy=92></text>
+                </g>
+            </g>
+        </g>
+    </svg>
 </div>
+
 
 <script type="module" src="./js/network.js"></script>
 </body>

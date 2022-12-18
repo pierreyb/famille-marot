@@ -13,7 +13,7 @@ html {
   color: rgb(59, 85, 96);
 }
 
-div.FamilyChart text {
+#FamilyChart text {
   fill: currentColor;
 }
 
@@ -32,15 +32,6 @@ div.FamilyChart text {
 .card-main {
   stroke: #000;
 }
-
-/* card_family_tree element */
-.card_family_tree rect {
-  transition: .3s;
-}
-.card_family_tree:hover rect {
-  transform: scale(1.1);
-}
-
 
 /* link element */
 .card_break_link, .link_upper, .link_lower, .link_particles {

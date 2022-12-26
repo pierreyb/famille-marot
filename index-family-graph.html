@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>Famille Marot</title>
+    <script src="https://unpkg.com/d3@6"></script>
+    <link rel="stylesheet" href="styles/familyGraph.css">
+
+</head>
+<body>
+<div id="FamilyChart" style="height: 98vh; width: 98vw;margin: auto;position: relative">
+    <svg width="300" height="300" style="max-width: 100%;">
+        <g class="familyView">
+            <g class="familyCard">
+                <g transform="translate(-90,-58)">
+                    <rect width="180" height="115" rx="4" ry="4" class="card-outline card-main-outline"></rect>
+                    <text class="familyCardName" dx=10 dy=75></text>
+                    <text class="familyCardBirth" dx=10 dy=92></text>
+                </g>
+            </g>
+        </g>
+    </svg>
+</div>
+
+
+<script type="module" src="./js/family-graph.js"></script>
+</body>
+</html>
